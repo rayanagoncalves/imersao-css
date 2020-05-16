@@ -8,7 +8,6 @@
 body {
   background-color: #FFE4E1;
   background-size: auto 100vh;
-  font-family: Arial;
   height: 100vh;
   font-size: 12px;
   font-family: 'Roboto', sans-serif;
@@ -43,7 +42,7 @@ header{
 }
 
 .menu {
-  background-color:	#DB7093; 
+  background-color:#FFFAFA; 
   position: fixed;
   width: 100vw;
   top: 0;
@@ -66,8 +65,13 @@ a {
 .menu a {
   display: block; 
   padding: 20px 20px;
-  color: whitesmoke;
+  color: 	#C71585;
   transition: background-color 0.8s, color 0.08s;
+}
+
+.menu i {
+  color:8B008B;
+  font-size: 1.3em;
 }
 
 .menu a:active,
@@ -82,25 +86,27 @@ a:hover {
 
 .site-subtitle,
 .site-title {
-  color: #696969;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
 }
 
 .site-title {
-  font-size: 3em; /* 4x o tamanho do font-size que tá declarado no body */
+  color:	#C71585;
+  font-size: 3.4em; /* 4x o tamanho do font-size que tá declarado no body */
 }
 
 .site-subtitle {
   line-height: 1.8em;
+  color: #FF69B4;
 }
 
 .sobre,
 .contato,
 .portfolio, 
 .experiencias {
-  padding: 3em;
-  min-height: 100vh;
+  padding: 4em;
+  min-height: 300px;
+  letter-spacing: 2px;
 }
 
 @media (min-width: 1200px) {
@@ -118,10 +124,10 @@ a:hover {
 .contato h2,
 .portfolio h2,
 .experiencias h2 {
-  color: #696969;
+  color: #C71585;
   margin-bottom: 1.5em;
   font-size: 1.5em;
-  font-weight: normal;
+  font-weight: bols;
   text-align: center;
 }
 
@@ -155,9 +161,16 @@ a:hover {
 .competencias {
   align-items: center;
   color: #696969;
-  font-size: 6em;
+  font-size: 6.3em;
   display: flex;
   justify-content: space-around;
+    transition: transform 500ms;
+} 
+
+
+.competencias .fab:hover,
+.competencias .fas:hover  {
+  transform: scale(1.2);
 }
 
 .lista-experiencias {
@@ -165,6 +178,23 @@ a:hover {
   margin-bottom: 1.4em;
   text-indent: 1.4em;
   text-align: justify;
+}
+
+.experiencias a {
+  color:#FF69B4;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.experiencias p {
+  padding: 10px;
+  color: #C71585;
+  font-weight: bold;
+}
+
+.contato {
+  min-height: 350px;
+  padding: 2em;
+  text-align: center;
 }
 
 .contato .icons {
@@ -177,8 +207,45 @@ a:hover {
   transition: text-shadow 1s;
 }
 
+.contato p {
+  color: #696969;
+  font-weight: bold;
+}
+
 .contato a:active,
 .contato a:hover  {
   text-decoration: none;
   text-shadow: 0px 0px 10px rgba(0,0,0,.6);
+}
+
+.rodape {
+  background:	#FF69B4;
+  background-size: 100vh;
+  padding: 10px;
+}
+
+.rodape p {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Jost", sans-serif;
+  text-decoration: none;
+}
+
+@media (min-width: 360px) {
+  .rodape p {
+    font-size: 14px;
+  }
+}
+
+.rodape p:hover {
+  color: black;
+}
+
+.competencias p {
+  font-size: 0.25em;
+  text-align: center;
+  margin-top: 20px;
+  color: 	#4F4F4F;
+  font-family: 'Montserrat', sans-serif;
 }
