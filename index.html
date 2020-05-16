@@ -11,22 +11,23 @@
 <body>
     <header>
         <nav class="menu">
-            <ul>
+            <ul class="container">
                 <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#portfolio">Projetos</a></li>
+				<li><a href="#portfolio">Competências</a></li>
+				<li><a href="#portfolio">Experiências</a></li>
                 <li><a href="#contato">Contato</a></li>
              </ul>
         </nav>
         <div class="titulos">
             <h1 class="site-title">Rayana Gonçalves</h1>
-            <h2 class="site-subtitle">Jr. Developer</h2>
+            <h2 class="site-subtitle">Software Developer</h2>
         </div>  
 	</header>
-	<section class="sobre">
+	<section class="sobre container">
 		<h2>Sobre</h2>
 
-		<figure>
-			<img src="" alt="">
+		<figure class="avatar">
+			<img src="img/avatar.png" alt="Rayana Gonçalves">
 		</figure>
 
 		<p>
@@ -42,35 +43,71 @@
 		</p>
 
 		<p>
-			Este site foi construído durante a <a href="https://www.alura.com.br/imersao-css">Imersão CSS da Alura</a> ;)
+			Este site foi construído durante a <a href="https://www.alura.com.br/imersao-css">Imersão CSS da Alura</a> 😻
 		</p>
 	</section>
-    <section class="portfolio" id="portfolio">
+    <section class="portfolio container" id="portfolio">
 		<h2>Projetos</h2>
 		<div class="grid">
-			<figure>
-				<img class="img-portfolio" src="./img/alura.png" alt="Alura">
-				<figcaption>Alura</figcaption>
-			</figure>
-			<figure>
-				<img class="img-portfolio" src="./img/caelum.png" alt=">Caelum">
-				<figcaption>Caelum</figcaption>
-			</figure>
-			<figure>
-				<img class="img-portfolio" src="./img/hispters.png" alt="Hipsters.Tech">
-				<figcaption>Hipsters.Tech</figcaption>
-			</figure>
-			<figure>
-				<img class="img-portfolio" src="./img/likeaboss.png" alt="Like a Boss">
-				<figcaption>Like a Boss</figcaption>
-			</figure>
-			<figure>
-				<img class="img-portfolio" src="./img/hobby.png" alt="Handstand">
-				<figcaption>Handstand</figcaption>
-			</figure>
+			
+			<div class="flip-card">
+				<div class="card">
+				  <figure class="card-front">
+					<img class="img-portfolio" src="./img/alura.png" alt="Alura">
+				  </figure>
+				  <div class="card-back">
+					<h3>Alura</h3>
+				  </div>
+				</div>
+			  </div>
+	  
+			  <div class="flip-card">
+				<div class="card">
+				  <figure class="card-front">
+					<img class="img-portfolio" src="./img/caelum.png" alt="Caelum">
+				  </figure>
+				  <div class="card-back">
+					<h3>Caelum</h3>
+				  </div>
+				</div>
+			  </div>
+	  
+			  <div class="flip-card">
+				<div class="card">
+				  <figure class="card-front">
+					<img class="img-portfolio" src="./img/hispters.png" alt="Hipsters.Tech">
+				  </figure>
+				  <div class="card-back">
+							<h3>Hipsters.Tech</h3>
+				  </div>
+				</div>
+			  </div>
+	  
+			  <div class="flip-card">
+				<div class="card">
+				  <figure class="card-front">
+					<img class="img-portfolio" src="./img/likeaboss.png" alt="Like a Boss">
+				  </figure>
+				  <div class="card-back">
+					<h3>Like a Boss</h3>
+				  </div>
+				</div>
+			  </div>
+	  
+			  <div class="flip-card">
+				<div class="card">
+				  <figure class="card-front">
+					<img class="img-portfolio" src="./img/hobby.png" alt="Handstand">
+				  </figure>
+				<div class="card-back">
+				  <h3>Handstand</h3>
+				</div>
+			  </div>
+			</div>
+
 		</div>
 	</section>
-	<section class="contato" id="contato">
+	<section class="contato container" id="contato">
 		<h2>Contato</h2>
 		  <div class="grid icons">
 		  <a target="_blank" href="https://github.com/rayanagoncalves">
