@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #DCDCDC;
+  background-color: #FFE4E1;
   background-size: auto 100vh;
   font-family: Arial;
   height: 100vh;
@@ -43,7 +43,7 @@ header{
 }
 
 .menu {
-  background-color:	#808080; 
+  background-color:	#DB7093; 
   position: fixed;
   width: 100vw;
   top: 0;
@@ -61,7 +61,12 @@ header{
 .menu a {
   display: block; 
   padding: 20px 20px;
-  color: #1C1C1C;
+  color: whitesmoke;
+  transition: background-color 0.8s;
+}
+
+.menu a:hover {
+  background-color: #DCDCDC;
 }
 
 a {
@@ -88,11 +93,15 @@ a:hover {
   line-height: 1.8em;
 }
 
+.sobre,
+.contato,
 .portfolio {
   padding: 2em;
-  height: 100vh;
+  min-height: 100vh;
 }
 
+.sobre h2,
+.contato h2,
 .portfolio h2 {
   color: #696969;
   margin-bottom: 1.5em;
@@ -129,4 +138,28 @@ a:hover {
   height: 180px;
   object-fit: cover;
   object-position: left bottom;
+  transition: transform 500ms;
+}
+
+.img-portfolio:hover {
+  transform: scale(1.2);
+}
+
+.contato h2 {
+  text-align: center;
+}
+.contato .icons {
+  text-align: center;
+}
+
+.contato a {
+  color: #696969;
+  font-size: 6em;
+  transition: text-shadow 1s;
+}
+
+.contato a:active,
+.contato a:hover  {
+  text-decoration: none;
+  text-shadow: 0px 0px 10px rgba(0,0,0,.6);
 }

@@ -5,23 +5,47 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rayana Gonçalves</title>
 	<link rel="stylesheet" href="css/estilos.css">
-	<<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@300;700&family=Source+Code+Pro&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@300;700&family=Source+Code+Pro&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/75d8c60c74.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <nav class="menu">
             <ul>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#portfolio">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
              </ul>
         </nav>
-        <div>
+        <div class="titulos">
             <h1 class="site-title">Rayana Gonçalves</h1>
             <h2 class="site-subtitle">Jr. Developer</h2>
         </div>  
-    </header>
-    <section class="portfolio">
+	</header>
+	<section class="sobre">
+		<h2>Sobre</h2>
+
+		<figure>
+			<img src="" alt="">
+		</figure>
+
+		<p>
+		    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos sunt nesciunt, odio vero quia odit repudiandae sapiente maxime, provident non vitae porro consequatur perferendis, quidem optio eius molestiae incidunt dolorum!
+		</p>
+
+		<p>
+		    Quisquam adipisci harum ex sint quasi distinctio impedit, nulla, mollitia, aspernatur reiciendis fugiat? Sit minus, repellendus itaque velit iste est voluptatem ad soluta, nemo quis dignissimos amet voluptas accusamus quo!
+		</p>	
+
+		<p>
+			Ipsam atque cupiditate numquam fugit. Dolores quos ea tempora doloribus minima ratione, ab qui accusamus, illum pariatur, vitae corrupti ex aperiam aliquid animi sint reiciendis quod eum? Optio, quae facilis!
+		</p>
+
+		<p>
+			Este site foi construído durante a <a href="https://www.alura.com.br/imersao-css">Imersão CSS da Alura</a> ;)
+		</p>
+	</section>
+    <section class="portfolio" id="portfolio">
 		<h2>Projetos</h2>
 		<div class="grid">
 			<figure>
@@ -44,6 +68,20 @@
 				<img class="img-portfolio" src="./img/hobby.png" alt="Handstand">
 				<figcaption>Handstand</figcaption>
 			</figure>
+		</div>
+	</section>
+	<section class="contato" id="contato">
+		<h2>Contato</h2>
+		  <div class="grid icons">
+		  <a target="_blank" href="https://github.com/rayanagoncalves">
+			<i class="fab fa-github"></i>
+		  </a>
+		  <a target="_blank" href="https://www.linkedin.com/in/rayana-gonçalves-6b2b8747">
+			<i class="fab fa-linkedin"></i>
+		  </a>
+		  <a href="mailto:rayana.goncalves.cunha@hotmail.com">
+			<i class="fas fa-envelope-square"></i>
+		  </a>
 		</div>
 	</section>
 </body>
