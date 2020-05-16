@@ -97,7 +97,8 @@ a:hover {
 
 .sobre,
 .contato,
-.portfolio {
+.portfolio, 
+.experiencias {
   padding: 3em;
   min-height: 100vh;
 }
@@ -105,7 +106,8 @@ a:hover {
 @media (min-width: 1200px) {
   .sobre,
   .contato,
-  .portfolio {
+  .portfolio,
+  .experiencias {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -114,7 +116,8 @@ a:hover {
 
 .sobre h2,
 .contato h2,
-.portfolio h2 {
+.portfolio h2,
+.experiencias h2 {
   color: #696969;
   margin-bottom: 1.5em;
   font-size: 1.5em;
@@ -123,7 +126,7 @@ a:hover {
 }
 
 .sobre p {
-  color: 696969;
+  color: #696969;
   margin-bottom: 1.4em;
   text-indent: 1.4em;
   text-align: justify;
@@ -149,68 +152,19 @@ a:hover {
   object-fit: cover;
 }
 
-.portfolio .grid {
-  display: grid;
-  gap: 2em;
-}
-
-@media (min-width: 560px) {
-  .portfolio .grid {
-    grid-template-columns: repeat(2, 240px);
-  }
-}
-
-@media (min-width: 880px) {
-  .portfolio .grid {
-    grid-template-columns: repeat(3, 260px);
-    align-content: center;
-    justify-content: center;
-    height: calc(100vh - 8em - 48px);
-  }
-}
-
-.portfolio figure {
-  text-align: center;
-}
-
-.img-portfolio {
-  width: 100%; 
-  height: 180px;
-  object-fit: cover;
-  object-position: left bottom;
-  transition: transform 500ms;
-}
-
-.flip-card {
-  height: 180px;
-  perspective: 1000px;
-}
-
-.flip-card:hover .card {
-  transform: rotateY(180deg);
-}
-
-.card {
-  position: relative;
-  transform-style: preserve-3d; 
-  transition: transform 3s;
-}
-
-.card-front, .card-back {
-  backface-visibility: hidden;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
-.card-back {
-  display: flex;
+.competencias {
   align-items: center;
-  justify-content: center;
-  background-color: rgba(255, 255, 255, .7);
-  height: 180px;
-  width: 100%;
-  transform: rotateY(180deg);
+  color: #696969;
+  font-size: 6em;
+  display: flex;
+  justify-content: space-around;
+}
+
+.lista-experiencias {
+  color: #696969;
+  margin-bottom: 1.4em;
+  text-indent: 1.4em;
+  text-align: justify;
 }
 
 .contato .icons {
