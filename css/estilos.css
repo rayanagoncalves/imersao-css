@@ -156,6 +156,7 @@ a:hover {
   width: 400px; 
   height: 380px;
   object-fit: cover;
+  border-radius: 10%;
 }
 
 .competencias {
