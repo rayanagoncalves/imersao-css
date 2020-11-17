@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #FFE4E1;
+  background-color:#E0FFFF;
   background-size: auto 100vh;
   height: 100vh;
   font-size: 12px;
@@ -42,7 +42,7 @@ header{
 }
 
 .menu {
-  background-color:#FFFAFA; 
+  background-color:		#FFFAFA; 
   position: fixed;
   width: 100vw;
   top: 0;
@@ -165,7 +165,7 @@ a:hover {
   font-size: 6.3em;
   display: flex;
   justify-content: space-around;
-    transition: transform 500ms;
+  transition: transform 500ms;
 } 
 
 .competencias p {
